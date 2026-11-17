@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1124">
+  <title>Sarana Visual Kreasi — Rental Equipment Video, Broadcast &amp; Event</title>
+  <meta name="description" content="Sewa kamera, lensa, lighting, audio, multicam, LED screen dan genset untuk produksi video, broadcast dan event. Lebih dari 400 equipment dengan harga harian yang jelas.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#katalog">Lewati ke katalog</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="top" id="top">
+    <div class="wrap top__in">
+      <a class="brand" href="#top" aria-label="Sarana Visual Kreasi, ke atas">
+        <img class="brand__mark" src="img/brand/mark-dark.webp" width="256" height="262" alt="">
+        <span class="brand__name"><b data-brand-1>Sarana</b><small data-brand-2>Visual Kreasi</small></span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#paket">Paket</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#cara-sewa">Cara sewa</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <button class="cartbtn" type="button" data-action="open-cart" aria-label="Buka daftar sewa">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h13l-1.4 9.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.7L6 4H3.5"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cartbtn__label">Daftar sewa</span>
+        <span class="cartbtn__count" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============================== HERO =============================== -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="rec" aria-hidden="true"></span> Rental equipment produksi</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Sewa gear</span></span>
+            <span class="line"><span>produksi</span></span>
+            <span class="line line--accent"><span>siap on&#8209;air.</span></span>
+          </h1>
+          <p class="hero__lead">Kamera, lensa, lighting, audio, multicam, LED screen sampai genset. <strong data-stat="items">400+</strong> equipment dengan harga harian yang jelas. Pilih, hitung, lalu kirim daftar sewa lewat WhatsApp.</p>
+
+          <form class="hero__search" id="heroSearch" role="search" autocomplete="off">
+            <label class="sr-only" for="heroQ">Cari equipment</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+            <input id="heroQ" type="search" placeholder="Cari: Sony Z190, Aputure 600d, genset…" enterkeyhint="search">
+            <button class="btn btn--primary" type="submit">Cari</button>
+          </form>
+          <ul class="hero__quick" aria-label="Pencarian cepat">
+            <li><button type="button" data-quick="Sony">Sony</button></li>
+            <li><button type="button" data-quick="Aputure">Aputure</button></li>
+            <li><button type="button" data-quick="Hollyland">Hollyland</button></li>
+            <li><button type="button" data-quick="LED Screen">LED Screen</button></li>
+            <li><button type="button" data-quick="Drone">Drone</button></li>
+            <li><button type="button" data-quick="Genset">Genset</button></li>
+          </ul>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <span class="hero__glow"></span>
+          <img class="hero__prod hero__prod--c" src="img/p/p-7d38a2eb.webp" alt="" width="660" height="660">
+          <img class="hero__prod hero__prod--a" src="img/p/p-dbff095e.webp" alt="" width="720" height="720">
+          <img class="hero__prod hero__prod--b" src="img/p/p-b0e12d55.webp" alt="" width="720" height="720">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ KATEGORI ============================ -->
+    <section class="cats" id="kategori" aria-labelledby="catsTitle">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Jelajahi</p>
+          <h2 id="catsTitle">Sembilan kategori,<br>satu daftar sewa</h2>
+        </div>
+        <ul class="cats__grid" id="catTiles"></ul>
+      </div>
+    </section>
+
+    <!-- ============================== PAKET ============================== -->
+    <section class="paket" id="paket" aria-labelledby="paketTitle">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Praktis</p>
+          <h2 id="paketTitle">Paket siap pakai</h2>
+          <p class="sec-head__sub">Multicam, lighting, dan sound system. Satu ketukan, langsung masuk daftar sewa.</p>
+        </div>
+      </div>
+      <div class="rail" id="paketRail" tabindex="0" aria-label="Daftar paket, geser ke samping"></div>
+    </section>
+
+    <!-- ============================= KATALOG ============================= -->
+    <section class="catalog" id="katalog" aria-labelledby="katalogTitle">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Semua equipment</p>
+          <h2 id="katalogTitle">Katalog</h2>
+          <p class="sec-head__sub">Foto bersifat ilustratif per jenis alat. Model yang disewa sesuai nama dan daftar harga di kartu.</p>
+        </div>
+      </div>
+
+      <div class="toolbar" id="toolbar">
+        <div class="wrap toolbar__in">
+          <label class="search">
+            <span class="sr-only">Cari equipment</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+            <input id="q" type="search" placeholder="Cari nama, brand, atau jenis…" autocomplete="off" enterkeyhint="search">
+            <button class="search__clear" id="qClear" type="button" aria-label="Hapus pencarian" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+          </label>
+          <div class="chips" id="catChips" role="group" aria-label="Filter kategori"></div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="subchips" id="subChips" role="group" aria-label="Filter jenis" hidden></div>
+        <div class="meta">
+          <p class="meta__count" id="resultCount" aria-live="polite"></p>
+          <button class="meta__reset" id="resetBtn" type="button" hidden>Reset filter</button>
+          <label class="sort">
+            <span>Urutkan</span>
+            <select id="sort">
+              <option value="catalog">Urutan katalog</option>
+              <option value="price-asc">Harga terendah</option>
+              <option value="price-desc">Harga tertinggi</option>
+              <option value="name">Nama A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="empty-results" id="noResults" hidden>
+          <p class="empty-results__big">Tidak ketemu.</p>
+          <p id="noResultsText">Coba kata kunci lain.</p>
+          <div class="empty-results__act">
+            <button class="btn btn--ghost" type="button" data-action="reset">Reset filter</button>
+            <a class="btn btn--primary" id="requestLink" href="#" target="_blank" rel="noopener">Tanyakan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="more"><button class="btn btn--ghost" id="moreBtn" type="button" hidden>Tampilkan lebih banyak</button></div>
+      </div>
+    </section>
+
+    <!-- ============================ CARA SEWA ============================ -->
+    <section class="steps band" id="cara-sewa" aria-labelledby="stepsTitle">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Alur</p>
+          <h2 id="stepsTitle">Empat langkah<br>sampai gear di tangan</h2>
+        </div>
+        <ol class="steps__list">
+          <li class="reveal"><span class="steps__n" aria-hidden="true">01</span><h3>Pilih equipment</h3><p>Telusuri katalog atau cari langsung. Tekan <b>Tambah</b> untuk memasukkan ke daftar sewa.</p></li>
+          <li class="reveal"><span class="steps__n" aria-hidden="true">02</span><h3>Atur jadwal</h3><p>Tentukan tanggal mulai dan lama sewa. Estimasi total langsung terhitung.</p></li>
+          <li class="reveal"><span class="steps__n" aria-hidden="true">03</span><h3>Kirim lewat WhatsApp</h3><p>Daftar lengkap dengan harga terkirim sebagai satu pesan, tanpa perlu mengetik ulang.</p></li>
+          <li class="reveal"><span class="steps__n" aria-hidden="true">04</span><h3>Konfirmasi tim kami</h3><p>Kami cek ketersediaan, memastikan total akhir, dan menyiapkan equipment Anda.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="foot band" id="kontak">
+    <div class="wrap">
+      <img class="foot__logo" src="img/brand/logo-dark.webp" width="748" height="421" alt="Sarana Visual Kreasi" loading="lazy">
+      <div class="foot__cta">
+        <h2>Butuh gear yang<br>belum ada di daftar?</h2>
+        <p>Kami sering punya lebih dari yang tertulis. Tanyakan langsung, tim kami bantu carikan.</p>
+        <a class="btn btn--primary btn--lg" id="footWa" href="#" target="_blank" rel="noopener">Tanya via WhatsApp</a>
+      </div>
+      <div class="foot__cols">
+        <div>
+          <p class="foot__brand" data-brand>Sarana Visual Kreasi</p>
+          <p class="foot__tag" data-tagline></p>
+        </div>
+        <ul class="foot__contact" id="contactList"></ul>
+        <div class="foot__note">
+          <p>Harga dalam Rupiah per hari kecuali tertera lain (per 10 jam, per meter, atau pembelian). Harga dan ketersediaan dapat berubah; total akhir dikonfirmasi oleh tim kami.</p>
+          <a class="foot__top" href="#top">Kembali ke atas ↑</a>
+        </div>
+      </div>
+      <details class="credits" id="credits" hidden>
+        <summary>Kredit foto</summary>
+        <ul id="creditList"></ul>
+      </details>
+      <p class="foot__copy">© <span id="year"></span> <span data-brand>Sarana Visual Kreasi</span>. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- ============================ DAFTAR SEWA ============================ -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+    <header class="drawer__head">
+      <div>
+        <p class="eyebrow">Permintaan sewa</p>
+        <h2 id="drawerTitle">Daftar sewa</h2>
+      </div>
+      <button class="iconbtn" type="button" data-action="close-cart" aria-label="Tutup daftar sewa">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="drawer__body" id="drawerBody">
+      <div class="cart-empty" id="cartEmpty">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 20v-6a4 4 0 0 1 4-4h6M44 10h6a4 4 0 0 1 4 4v6M54 44v6a4 4 0 0 1-4 4h-6M20 54h-6a4 4 0 0 1-4-4v-6"/><circle cx="32" cy="32" r="5"/></svg>
+        <p class="cart-empty__big">Belum ada equipment.</p>
+        <p>Pilih dari katalog, lalu kembali ke sini untuk mengirim daftar sewa.</p>
+        <button class="btn btn--primary" type="button" data-action="close-cart" data-goto="#katalog">Lihat katalog</button>
+      </div>
+
+      <div id="cartFilled" hidden>
+        <div class="lines-head"><p id="linesCount">0 item</p><button class="btn btn--text" type="button" data-action="clear">Kosongkan</button></div>
+        <ul class="lines" id="cartLines"></ul>
+
+        <fieldset class="form">
+          <legend>Jadwal sewa</legend>
+          <div class="form__row">
+            <div class="field">
+              <label for="fStart">Tanggal mulai</label>
+              <input id="fStart" type="date">
+            </div>
+            <div class="field">
+              <span class="label" id="daysLabel">Lama sewa</span>
+              <div class="stepper" role="group" aria-labelledby="daysLabel">
+                <button type="button" data-action="days-dec" aria-label="Kurangi satu hari">−</button>
+                <output id="daysOut" aria-live="polite">1 hari</output>
+                <button type="button" data-action="days-inc" aria-label="Tambah satu hari">+</button>
+              </div>
+            </div>
+          </div>
+          <p class="hint" id="rangeHint"></p>
+        </fieldset>
+
+        <fieldset class="form">
+          <legend>Data penyewa</legend>
+          <div class="field">
+            <label for="fName">Nama / perusahaan</label>
+            <input id="fName" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="fEvent">Acara &amp; lokasi <em>(opsional)</em></label>
+            <input id="fEvent" type="text" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="fNote">Catatan <em>(opsional)</em></label>
+            <textarea id="fNote" rows="2"></textarea>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+    <footer class="drawer__foot" id="cartFoot" hidden>
+      <div class="total">
+        <span>Estimasi total <small id="sumMeta"></small></span>
+        <strong id="sumTotal">Rp 0</strong>
+      </div>
+      <button class="btn btn--primary btn--block btn--lg" type="button" data-action="send-wa">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.7 7.1L4 20l.9-4.1A8 8 0 1 1 20 12z"/><path d="M9 9.5c.3 2.6 2.4 4.7 5.5 5.5"/></svg>
+        Kirim via WhatsApp
+      </button>
+      <div class="foot-actions">
+        <button class="btn btn--ghost" type="button" data-action="copy">Salin ringkasan</button>
+        <button class="btn btn--ghost" type="button" data-action="print">Cetak / PDF</button>
+      </div>
+      <p class="fine">Ini estimasi harga. Ketersediaan dan total akhir dikonfirmasi tim kami.</p>
+    </footer>
+  </aside>
+
+  <!-- bar kecil di bawah layar -->
+  <div class="bar" id="bar" hidden>
+    <button class="bar__btn" type="button" data-action="open-cart" aria-label="Buka daftar sewa">
+      <span class="bar__count" data-cart-count>0</span>
+      <span class="bar__text"><b>Daftar sewa</b><small id="barSub">—</small></span>
+      <span class="bar__go">Lihat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="print-sheet" id="printSheet" aria-hidden="true"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/photos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
